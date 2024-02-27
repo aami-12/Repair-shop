@@ -111,7 +111,7 @@ const DashHeader = () => {
 
     // const errClass = isError ? "errmsg" : "offscreen"
 
-    let buttonContent;
+    let buttonContent = <></>;
     if (isLoading) {
         buttonContent = <p>Logging Out...</p>
     } else {
