@@ -111,20 +111,20 @@ const DashHeader = () => {
 
     // const errClass = isError ? "errmsg" : "offscreen"
 
-    // let buttonContent = <></>;
-    // if (isLoading) {
-    //     buttonContent = <p>Logging Out...</p>
-    // } else {
-    //     buttonContent = (
-    //         <>
-    //             {newNoteButton}
-    //             {newUserButton}
-    //             {notesButton}
-    //             {userButton}
-    //             {logoutButton}
-    //         </>
-    //     )
-    // }
+    let buttonContent = <></>;
+    if (isLoading) {
+        buttonContent = <p>Logging Out...</p>
+    } else {
+        buttonContent = (
+            <>
+                {newNoteButton}
+                {newUserButton}
+                {notesButton}
+                {userButton}
+                {logoutButton}
+            </>
+        )
+    }
 
     const content = (
         <header className="dash-header">
@@ -134,6 +134,7 @@ const DashHeader = () => {
                 </Link>
                 <nav className="dash-header__nav">
                     {/* add more buttons later */}
+                    {buttonContent}
                     {logoutButton}
                 </nav>
             </div>
