@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faFileCirclePlus,
@@ -24,9 +24,9 @@ const DashHeader = () => {
 
     const [sendLogout, {
         isLoading,
-        isSuccess,
-        isError,
-        error
+        // isSuccess,
+        // isError,
+        // error
     }] = useSendLogoutMutation()
 
     // useEffect(() => {
@@ -109,9 +109,9 @@ const DashHeader = () => {
         </button>
     )
 
-    const errClass = isError ? "errmsg" : "offscreen"
+    // const errClass = isError ? "errmsg" : "offscreen"
 
-    let buttonContent
+    let buttonContent;
     if (isLoading) {
         buttonContent = <p>Logging Out...</p>
     } else {
