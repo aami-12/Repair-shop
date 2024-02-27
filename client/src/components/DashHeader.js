@@ -135,7 +135,7 @@ const DashHeader = () => {
                 <nav className="dash-header__nav">
                     {/* add more buttons later */}
                     {buttonContent}
-                    {logoutButton}
+                    {/* {logoutButton} */}
                 </nav>
             </div>
         </header>
